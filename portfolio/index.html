@@ -3,157 +3,434 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>B M Janardhan | Portfolio</title>
+  <title>B M Janardhan | AI-Driven Full Stack Developer</title>
+  <meta name="description" content="AI-Driven Full Stack Developer specialising in Python, React.js, Django, Machine Learning, and AI-powered web applications. B M Janardhan — Chennai, India."/>
+  <meta name="author" content="B M Janardhan"/>
+  <meta property="og:title" content="B M Janardhan | AI-Driven Full Stack Developer"/>
+  <meta property="og:description" content="AI-Driven Full Stack Developer specialising in Python, React.js, Django, Machine Learning, and AI-powered web applications."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://janam9097-arch.github.io/portfolio/"/>
+  <meta name="robots" content="index, follow"/>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- ── HERO ── -->
-  <section id="hero">
-
-    <!-- LEFT -->
-    <div class="hero-left">
-
-      <!-- Main text -->
-      <div class="hero-body">
-        <p class="hero-greeting">Hi, I am</p>
-        <h1 class="hero-name">B M<br>Janardhan</h1>
-        <p class="hero-role">AI & ML Engineer &nbsp;/&nbsp; Full Stack Developer</p>
-      </div>
-
-      <!-- Socials -->
-      <div class="hero-socials">
-        <a class="social-btn" href="mailto:janam9097@gmail.com" title="Email">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        </a>
-        <a class="social-btn" href="https://github.com" target="_blank" title="GitHub">
-          <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        </a>
-        <a class="social-btn" href="https://linkedin.com/in/b-m-janardhan-9b8919304" target="_blank" title="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-      </div>
-
-    </div>
-
-    <!-- RIGHT -->
-    <div class="hero-right">
-
-      <!-- Nav -->
-      <nav class="hero-nav">
-        <a href="#about">About me</a>
+  <!-- ══ STICKY NAVBAR ══ -->
+  <header id="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="B M Janardhan — Home">
+        <span class="logo-bracket">&lt;</span>BMJ<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Portfolio</a>
-        <a href="#contact" class="nav-contact">CONTACT ME</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
+  <!-- ══ HERO ══ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-left">
+      <div class="hero-body">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">B M<br/>Janardhan</h1>
+        <p class="hero-role">AI-Driven Full Stack Developer</p>
+        <p class="hero-sub">I build intelligent, data-driven web applications by combining modern full-stack development with machine learning and AI.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="./resume.pdf" class="btn btn-outline" download aria-label="Download Resume PDF">Download Resume</a>
+        </div>
+        <div class="hero-socials">
+          <a class="social-btn" href="https://github.com/janam9097-arch" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a class="social-btn" href="https://linkedin.com/in/b-m-janardhan-9b8919304" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a class="social-btn" href="mailto:janam9097@gmail.com" aria-label="Send email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
     </div>
 
+    <div class="hero-right" aria-hidden="true">
+      <div class="hero-code-block">
+        <div class="code-line"><span class="kw">class</span> <span class="cls">Janardhan</span><span class="pu">:</span></div>
+        <div class="code-line indent"><span class="kw">def</span> <span class="fn">__init__</span><span class="pu">(self):</span></div>
+        <div class="code-line indent2"><span class="va">self</span><span class="pu">.</span><span class="at">role</span> <span class="pu">=</span> <span class="st">"AI-Driven Full Stack Dev"</span></div>
+        <div class="code-line indent2"><span class="va">self</span><span class="pu">.</span><span class="at">stack</span> <span class="pu">=</span> <span class="pu">[</span><span class="st">"Python"</span><span class="pu">,</span> <span class="st">"React"</span><span class="pu">,</span> <span class="st">"Django"</span><span class="pu">]</span></div>
+        <div class="code-line indent2"><span class="va">self</span><span class="pu">.</span><span class="at">ai</span> <span class="pu">=</span> <span class="pu">[</span><span class="st">"ML"</span><span class="pu">,</span> <span class="st">"Deep Learning"</span><span class="pu">]</span></div>
+        <div class="code-line indent2"><span class="va">self</span><span class="pu">.</span><span class="at">db</span> <span class="pu">=</span> <span class="st">"MySQL"</span></div>
+        <div class="code-line">&nbsp;</div>
+        <div class="code-line indent"><span class="kw">def</span> <span class="fn">build</span><span class="pu">(</span><span class="va">self</span><span class="pu">,</span> <span class="va">idea</span><span class="pu">):</span></div>
+        <div class="code-line indent2"><span class="kw">return</span> <span class="fn">intelligent_app</span><span class="pu">(</span><span class="va">idea</span><span class="pu">)</span></div>
+        <div class="code-line blink-line">&nbsp;<span class="cursor">▋</span></div>
+      </div>
+    </div>
   </section>
 
-  <!-- ── ABOUT ── -->
-  <section id="about">
+  <!-- ══ ABOUT ══ -->
+  <section id="about" aria-labelledby="about-heading">
     <div class="section-inner">
       <div class="section-label">// 01 &nbsp; About</div>
-      <h2 class="section-title">Who I Am</h2>
+      <h2 class="section-title" id="about-heading">Who I Am</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>I'm a Computer Science (AI & ML) graduate from Siddharth Institute of Engineering & Technology, Andhra Pradesh. I specialise in Artificial Intelligence, Python, Django and Full Stack Development.</p>
-          <p>I love creating responsive websites and AI-powered applications. My philosophy: write clean code, ship reliable products, solve real problems.</p>
+          <p>I'm a final-year Computer Science student specialising in Artificial Intelligence &amp; Machine Learning at Siddharth Institute of Engineering &amp; Technology. My focus is on building practical, full-stack applications that bring AI and machine learning into real products — not just research notebooks.</p>
+          <p>I enjoy the full development cycle: designing clean interfaces with React.js, building robust backends with Python and Django, connecting data layers with MySQL, and training or integrating ML models that make applications genuinely smarter.</p>
+          <p>My philosophy is simple — write maintainable code, solve real problems, and keep learning. I'm actively looking for opportunities where I can contribute as a Full Stack Developer with an AI/ML edge.</p>
         </div>
         <div class="about-meta">
-          <div class="meta-item"><span class="meta-label">Degree</span><span class="meta-value">B.Tech CS (AI & ML) — 2022–2026</span></div>
-          <div class="meta-item"><span class="meta-label">Location</span><span class="meta-value">Andhra Pradesh, India</span></div>
-          <div class="meta-item"><span class="meta-label">Email</span><span class="meta-value"><a href="mailto:janam9097@gmail.com">janam9097@gmail.com</a></span></div>
-          <div class="meta-item"><span class="meta-label">Phone</span><span class="meta-value">+91 86869 09992</span></div>
-          <div class="meta-item"><span class="meta-label">Languages</span><span class="meta-value">English · Telugu · Hindi</span></div>
+          <div class="meta-item">
+            <span class="meta-label">Degree</span>
+            <span class="meta-value">B.Tech CS (AI &amp; ML) — 2022–2026</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Institution</span>
+            <span class="meta-value">Siddharth Institute of Engineering &amp; Technology</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Location</span>
+            <span class="meta-value">Chennai, India</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Email</span>
+            <span class="meta-value"><a href="mailto:janam9097@gmail.com">janam9097@gmail.com</a></span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Phone</span>
+            <span class="meta-value">+91 86869 09992</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Languages</span>
+            <span class="meta-value">English · Telugu · Hindi</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── SKILLS ── -->
-  <section id="skills">
+  <!-- ══ SKILLS ══ -->
+  <section id="skills" aria-labelledby="skills-heading">
     <div class="section-inner">
       <div class="section-label">// 02 &nbsp; Skills</div>
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-chip"><span class="skill-icon">🐍</span>Python</div>
-        <div class="skill-chip"><span class="skill-icon">🌐</span>HTML5</div>
-        <div class="skill-chip"><span class="skill-icon">🎨</span>CSS3</div>
-        <div class="skill-chip"><span class="skill-icon">🟨</span>JavaScript</div>
-        <div class="skill-chip"><span class="skill-icon">⚛️</span>React</div>
-        <div class="skill-chip"><span class="skill-icon">🎸</span>Django</div>
-        <div class="skill-chip"><span class="skill-icon">🗄️</span>MySQL</div>
-        <div class="skill-chip"><span class="skill-icon">🤖</span>Machine Learning</div>
-        <div class="skill-chip"><span class="skill-icon">☁️</span>AWS</div>
-        <div class="skill-chip"><span class="skill-icon">🐳</span>Docker</div>
+      <h2 class="section-title" id="skills-heading">Technical Skills</h2>
+      <div class="skills-categories">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Programming</h3>
+          <div class="skills-grid">
+            <div class="skill-chip" aria-label="Python">🐍 Python</div>
+            <div class="skill-chip" aria-label="JavaScript">🟨 JavaScript</div>
+            <div class="skill-chip" aria-label="HTML5">🌐 HTML5</div>
+            <div class="skill-chip" aria-label="CSS3">🎨 CSS3</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-chip">⚛️ React.js</div>
+            <div class="skill-chip">🌐 HTML5</div>
+            <div class="skill-chip">🎨 CSS3</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skills-grid">
+            <div class="skill-chip">🎸 Django</div>
+            <div class="skill-chip">🐍 Python</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Database</h3>
+          <div class="skills-grid">
+            <div class="skill-chip">🗄️ MySQL</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">AI &amp; Machine Learning</h3>
+          <div class="skills-grid">
+            <div class="skill-chip">🤖 Machine Learning</div>
+            <div class="skill-chip">🧠 Deep Learning</div>
+            <div class="skill-chip">⚡ Anomaly Detection</div>
+            <div class="skill-chip">📊 Data Analysis</div>
+            <div class="skill-chip">🔍 Model Building</div>
+            <div class="skill-chip">📈 Streamlit</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Tools &amp; Platforms</h3>
+          <div class="skills-grid">
+            <div class="skill-chip">🐙 Git</div>
+            <div class="skill-chip">💻 GitHub</div>
+            <div class="skill-chip">🖥️ VS Code</div>
+            <div class="skill-chip">🔬 Google Colab</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Core Computer Science</h3>
+          <div class="skills-grid">
+            <div class="skill-chip">🧮 DSA</div>
+            <div class="skill-chip">🗃️ DBMS</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ── PROJECTS ── -->
-  <section id="projects">
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects" aria-labelledby="projects-heading">
     <div class="section-inner">
-      <div class="section-label">// 03 &nbsp; Portfolio</div>
-      <h2 class="section-title">What I've Built</h2>
-      <div class="project-card">
-        <div class="project-year">2026</div>
-        <h3 class="project-title">AIOps-Driven Self-Healing Application</h3>
-        <p class="project-desc">Built an intelligent monitoring system that automatically detects system failures, analyzes logs and performs self-healing actions. Deployed on AWS with containerized microservices — reducing downtime by 30%.</p>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">AWS</span>
-          <span class="tag">Docker</span>
-          <span class="tag">AIOps</span>
+      <div class="section-label">// 03 &nbsp; Projects</div>
+      <h2 class="section-title" id="projects-heading">What I've Built</h2>
+      <div class="projects-grid">
+
+        <!-- Featured Project -->
+        <article class="project-card featured" aria-label="Featured project: AIOps-Driven Self-Healing Application">
+          <div class="project-top">
+            <span class="project-badge">Featured Project</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3 class="project-title">AIOps-Driven Self-Healing Application</h3>
+          <p class="project-desc">An end-to-end AI-driven infrastructure monitoring system that applies machine learning to automatically detect anomalies, identify potential faults before they cause failures, and trigger automated remediation workflows — all surfaced through a real-time Streamlit dashboard.</p>
+          <ul class="project-features">
+            <li>ML-based anomaly detection on system metrics and logs</li>
+            <li>Proactive fault identification before system failures occur</li>
+            <li>Automated decision-making and remediation workflows</li>
+            <li>Real-time system health visualisation via Streamlit</li>
+            <li>Alert pipeline with live log and event monitoring</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">AIOps</span>
+            <span class="tag">Anomaly Detection</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/janam9097-arch" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View project on GitHub">
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section id="experience" aria-labelledby="experience-heading">
+    <div class="section-inner">
+      <div class="section-label">// 04 &nbsp; Experience</div>
+      <h2 class="section-title" id="experience-heading">Experience &amp; Training</h2>
+      <div class="timeline">
+
+        <article class="timeline-item" aria-label="Machine Learning Intern at Interncertify">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Machine Learning Intern</h3>
+              <span class="timeline-date">October 2025</span>
+            </div>
+            <div class="timeline-org">Interncertify</div>
+            <p class="timeline-desc">Completed a hands-on machine learning internship, applying core ML concepts including model building, training, and evaluation to practical problem-solving tasks. Gained experience working through the full ML pipeline from data preprocessing to model assessment.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item" aria-label="Python Intern at Assistive Technology">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Python Intern</h3>
+              <span class="timeline-date">January 2024</span>
+            </div>
+            <div class="timeline-org">Assistive Technology</div>
+            <p class="timeline-desc">Developed Python-based solutions as part of an assistive technology internship programme, strengthening programming fundamentals, problem-solving skills, and the ability to apply Python to real-world use cases.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item" aria-label="Python Full Stack Developer Training at FITA Academy">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Python Full-Stack Developer Training</h3>
+              <span class="timeline-date">Training Programme</span>
+            </div>
+            <div class="timeline-org">FITA Academy, Chennai</div>
+            <p class="timeline-desc">Completed structured training covering Python, Django, React.js, MySQL, and full-stack web development. Built foundational proficiency in end-to-end application development across both frontend and backend layers.</p>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">React.js</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EDUCATION ══ -->
+  <section id="education" aria-labelledby="education-heading">
+    <div class="section-inner">
+      <div class="section-label">// 05 &nbsp; Education</div>
+      <h2 class="section-title" id="education-heading">Education</h2>
+      <div class="education-card" aria-label="B.Tech in Computer Science — AI and ML">
+        <div class="edu-icon" aria-hidden="true">🎓</div>
+        <div class="edu-body">
+          <h3 class="edu-degree">Bachelor of Technology — Computer Science</h3>
+          <p class="edu-spec">Specialisation: Artificial Intelligence &amp; Machine Learning</p>
+          <p class="edu-inst">Siddharth Institute of Engineering &amp; Technology</p>
+          <span class="edu-date">October 2022 – May 2026</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ── CERTIFICATES ── -->
-  <section id="certs">
-    <div class="section-inner">
-      <div class="section-label">// 04 &nbsp; Certifications</div>
-      <h2 class="section-title">Credentials</h2>
+      <!-- Certifications included under education -->
+      <h3 class="subsection-title">Certifications</h3>
       <div class="certs-list">
-        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Full-Stack Web Development</div><div class="cert-org">FITA Academy</div></div></div>
-        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Industry 4.0 & IIoT</div><div class="cert-org">NPTEL</div></div></div>
-        <div class="cert-item"><div class="cert-dot"></div><div><div class="cert-name">Programming in Java</div><div class="cert-org">NPTEL</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CONTACT ── -->
-  <section id="contact">
-    <div class="section-inner">
-      <div class="section-label">// 05 &nbsp; Contact</div>
-      <h2 class="section-title">Get In Touch</h2>
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:janam9097@gmail.com">
-          <div class="contact-icon">✉️</div>
-          <div><div class="contact-label">Email</div><div class="contact-value">janam9097@gmail.com</div></div>
-        </a>
-        <a class="contact-card" href="tel:+918686909992">
-          <div class="contact-icon">📱</div>
-          <div><div class="contact-label">Phone</div><div class="contact-value">+91 86869 09992</div></div>
-        </a>
-        <a class="contact-card" href="https://linkedin.com/in/b-m-janardhan-9b8919304" target="_blank">
-          <div class="contact-icon">💼</div>
-          <div><div class="contact-label">LinkedIn</div><div class="contact-value">b-m-janardhan</div></div>
-        </a>
-        <div class="contact-card">
-          <div class="contact-icon">📍</div>
-          <div><div class="contact-label">Location</div><div class="contact-value">Andhra Pradesh, India</div></div>
+        <div class="cert-item">
+          <div class="cert-dot" aria-hidden="true"></div>
+          <div>
+            <div class="cert-name">Full-Stack Web Development</div>
+            <div class="cert-org">FITA Academy</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-dot" aria-hidden="true"></div>
+          <div>
+            <div class="cert-name">Industry 4.0 &amp; IIoT</div>
+            <div class="cert-org">NPTEL</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-dot" aria-hidden="true"></div>
+          <div>
+            <div class="cert-name">Programming in Java</div>
+            <div class="cert-org">NPTEL</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
-  <footer id="footer"></footer>
+  <!-- ══ LEADERSHIP ══ -->
+  <section id="leadership" aria-labelledby="leadership-heading">
+    <div class="section-inner">
+      <div class="section-label">// 06 &nbsp; Leadership</div>
+      <h2 class="section-title" id="leadership-heading">Leadership &amp; Volunteering</h2>
+      <article class="leadership-card" aria-label="Event Volunteer — Hackathons and Tech Fests">
+        <div class="leadership-icon" aria-hidden="true">🏆</div>
+        <div class="leadership-body">
+          <h3 class="leadership-role">Event Volunteer — Hackathons &amp; Tech Fests</h3>
+          <span class="leadership-date">2023 – 2025</span>
+          <ul class="leadership-points">
+            <li>Assisted in organising coding competitions, hackathons, and technical workshops</li>
+            <li>Supported end-to-end event execution including logistics and participant coordination</li>
+            <li>Engaged with 200+ participants across multiple events</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Core Competencies as a sub-section -->
+      <h3 class="subsection-title" id="competencies-heading">Core Competencies</h3>
+      <div class="competencies-grid" aria-labelledby="competencies-heading">
+        <span class="competency-pill">Leadership</span>
+        <span class="competency-pill">Team Collaboration</span>
+        <span class="competency-pill">Problem-Solving</span>
+        <span class="competency-pill">Decision-Making</span>
+        <span class="competency-pill">Event Management</span>
+        <span class="competency-pill">Written Communication</span>
+        <span class="competency-pill">Verbal Communication</span>
+        <span class="competency-pill">Time Management</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="section-inner">
+      <div class="section-label">// 07 &nbsp; Contact</div>
+      <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+      <p class="contact-intro">I'm open to full-stack developer roles, AI application development positions, and Python/ML engineering opportunities. Feel free to reach out — I'd love to connect.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:janam9097@gmail.com" aria-label="Email B M Janardhan">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">janam9097@gmail.com</div>
+          </div>
+        </a>
+        <a class="contact-card" href="tel:+918686909992" aria-label="Call B M Janardhan">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">+91 86869 09992</div>
+          </div>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/b-m-janardhan-9b8919304" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">b-m-janardhan</div>
+          </div>
+        </a>
+        <a class="contact-card" href="https://github.com/janam9097-arch" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">janam9097-arch</div>
+          </div>
+        </a>
+        <div class="contact-card no-link" aria-label="Location: Chennai, India">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Location</div>
+            <div class="contact-value">Chennai, India</div>
+          </div>
+        </div>
+        <a class="contact-card" href="./resume.pdf" download aria-label="Download Resume PDF">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM12 17l-4-4h2.5v-3h3v3H16l-4 4z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Resume</div>
+            <div class="contact-value">Download PDF</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="footer" role="contentinfo"></footer>
 
   <script src="script.js"></script>
 </body>
